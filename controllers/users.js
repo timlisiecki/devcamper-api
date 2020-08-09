@@ -4,7 +4,7 @@ const User = require('../models/User');
 
 /*
  *    @desc    Get all users
- *    @route   GET /api/vi/auth/users
+ *    @route   GET /api/v1/auth/users
  *    @access  Private/Admin
  */
 exports.getUsers = asyncHandler(async (req, res, next) => {
@@ -13,7 +13,7 @@ exports.getUsers = asyncHandler(async (req, res, next) => {
 
 /*
  *    @desc    Get a single user
- *    @route   GET /api/vi/auth/users/:id
+ *    @route   GET /api/v1/auth/users/:id
  *    @access  Private/Admin
  */
 exports.getUser = asyncHandler(async (req, res, next) => {
@@ -24,7 +24,7 @@ exports.getUser = asyncHandler(async (req, res, next) => {
 
 /*
  *    @desc    Create a user
- *    @route   POST /api/vi/auth/users
+ *    @route   POST /api/v1/auth/users
  *    @access  Private/Admin
  */
 exports.createUser = asyncHandler(async (req, res, next) => {
@@ -35,7 +35,7 @@ exports.createUser = asyncHandler(async (req, res, next) => {
 
 /*
  *    @desc    Update a user
- *    @route   PUT /api/vi/auth/users/:id
+ *    @route   PUT /api/v1/auth/users/:id
  *    @access  Private/Admin
  */
 exports.updateUser = asyncHandler(async (req, res, next) => {
@@ -49,7 +49,7 @@ exports.updateUser = asyncHandler(async (req, res, next) => {
 
 /*
  *    @desc    Delete a user
- *    @route   DELETE /api/vi/auth/users/:id
+ *    @route   DELETE /api/v1/auth/users/:id
  *    @access  Private/Admin
  */
 exports.deleteUser = asyncHandler(async (req, res, next) => {
